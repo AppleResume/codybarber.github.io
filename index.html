@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cody Barber - CV and Values</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #ff6347;
+            margin-bottom: 10px;
+        }
+
+        .contact, .career-profile, .strengths, .qualifications, .employment, .referees {
+            margin-bottom: 30px;
+        }
+
+        .contact ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .contact ul li {
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            font-size: 18px;
+            color: #ff6347;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #ff6347;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff4500;
+        }
+
+        /* Button Style */
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .buttons button {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 10px;
+        }
+
+        .buttons button:hover {
+            background-color: #ff4500;
+        }
+
+        /* Values Section */
+        .values-section {
+            margin-top: 60px;
+        }
+
+        .fun-boxes {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .box {
+            background-color: #ff6347;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: transform 0.3s ease, max-height 0.5s ease;
+            overflow: hidden;
+            max-height: 100px;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        .box-content {
+            display: none;
+            padding: 10px;
+        }
+
+        .box.open {
+            max-height: 1000px; /* Ensure it accommodates the full text */
+        }
+
+        .box.open .box-content {
+            display: block;
+        }
+
+        .summary {
+            margin-top: 40px;
+            background-color: #ffd700;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .summary p {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Cody Barber</h1>
+
+
+
+    <div class="career-profile">
+        <h2>Career Profile</h2>
+        <p>
+            Dedicated and experienced cafe worker with over 2 years of experience specializing in customer interactions, teamwork, and multitasking in a fast-paced environment. Currently pursuing part-time studies in Information Technology at Murdoch University. I am eager to leverage my skills in a technology-focused career while continuing to develop my passion for computing and open-source software. Through my passion for Apple Technology, I already have a deep knowledge of Apple products that I can use to develop great solutions for customers.
+        </p>
+    </div>
+
+    <div class="strengths">
+        <h2>Key Strengths and Competencies</h2>
+        <ul>
+            <li><strong>Customer Service Excellence:</strong> Proven ability to engage with customers, ensuring a positive experience and addressing their needs effectively.</li>
+            <li><strong>Team Collaboration:</strong> Strong team player with experience in a collaborative environment, working cohesively to achieve operational goals.</li>
+            <li><strong>Multitasking Ability:</strong> Skilled in managing multiple responsibilities simultaneously, maintaining high levels of efficiency and productivity.</li>
+            <li><strong>Technical Proficiency:</strong> Proficient in Linux and open-source technologies with a keen interest in staying updated with the latest tech news and trends. Extensive knowledge of Apple products.</li>
+        </ul>
+    </div>
+
+    <div class="qualifications">
+        <h2>Qualifications</h2>
+        <ul>
+            <li>Mandurah Baptist College WACE - 2022</li>
+            <li>Murdoch University First Year Cyber Security and Forensics – 2023-2024</li>
+            <li>Barista Training – 2021</li>
+        </ul>
+    </div>
+
+    <div class="employment">
+        <h2>Employment History</h2>
+        <p><strong>Mc Café Employee (2022 - Present)</strong></p>
+        <p>Café Barista at McDonald’s, Mandurah Forum. As the café Barista, I am responsible for ensuring the effective operations of the café and performing under time pressure in a very busy environment.</p>
+
+        <h3>Key Responsibilities:</h3>
+        <ul>
+            <li>Customer Service</li>
+            <li>Café Barista duties and supporting other team members to ensure the overall performance of the restaurant.</li>
+        </ul>
+    </div>
+
+
+
+    <!-- Values Section Below -->
+    <div id="values-section" class="values-section">
+        <h1>Learn About Me and My Values</h1>
+        <h2>Click one to learn more about me</h2>
+
+        <div class="fun-boxes">
+            <div class="box" onclick="toggleBox(this)">
+                Accessibility
+                <div class="box-content">
+                    <p>I have always been passionate about technology, not just for its innovation but for its potential to empower people. Accessibility is central to this belief, as I strive to ensure that everyone, regardless of their technical expertise, can utilize their devices to their fullest potential. This passion is not just about providing solutions, but about making technology intuitive, approachable, and usable for all. I believe that true innovation in technology is measured by how easily it can be accessed and understood by diverse populations. Whether it’s helping a friend troubleshoot a system or recommending accessible software to a colleague, I am committed to breaking down the barriers that technology can sometimes create.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleBox(this)">
+                Environment
+                <div class="box-content">
+                    <p>I am deeply connected to the environment, and this connection shapes many of my decisions, both personal and professional. I am not only a lover of nature but also an advocate for sustainability. In my own backyard, I tend to a personal garden that reflects this passion, with my favorite being a mulberry tree, which symbolizes growth, resilience, and a nurturing approach to nature. This love for the environment drives me to seek out eco-friendly practices in technology as well, from energy-efficient devices to software that minimizes resource consumption. I believe that advancing technology should coexist harmoniously with protecting our planet, and I actively seek to contribute to both.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleBox(this)">
+                Inclusion & Diversity
+                <div class="box-content">
+                    <p>Inclusion and diversity are not just values I believe in; they are principles I live by. I am committed to fostering environments where people of all backgrounds and experiences feel valued and included. To enrich my own understanding and ensure that I grow in diversity, I frequently partner with and surround myself with individuals from a wide array of cultural backgrounds—whether Russian, Mexican, or from other unique communities. By embracing this diversity, I continuously learn from their perspectives, improving my ability to collaborate, innovate, and lead in a global society. To me, inclusion is about actively creating spaces where everyone, regardless of who they are or where they come from, feels respected and heard.</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="toggleBox(this)">
+                Privacy
+                <div class="box-content">
+                    <p>In today’s digital age, privacy is a value I hold close. I believe that everyone should have the right to control their own data and protect their personal information. To ensure this in my own life, I am a strong advocate of open-source solutions and privacy-centric tools. On my PC, I use Linux paired with Firefox and DuckDuckGo to minimize my digital footprint. For mobile, I trust Apple’s iPhone due to its proven security measures and commitment to privacy. I take careful steps to ensure my personal data is protected, and I advocate for others to do the same. Privacy is about freedom—freedom from unwanted intrusion, and the freedom to exist online without being constantly monitored.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="summary">
+            <h2>Summary of My Values</h2>
+            <p>Accessibility: I strive to ensure that technology is approachable, intuitive, and accessible to all.</p>
+            <p>Environment: My love for nature drives me to advocate for sustainable, eco-friendly technology.</p>
+            <p>Inclusion & Diversity: I actively create inclusive spaces and surround myself with diverse individuals to foster understanding.</p>
+            <p>Privacy: I am passionate about safeguarding personal data and using privacy-centric tools.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleBox(clickedBox) {
+        const boxes = document.querySelectorAll('.box');
+        boxes.forEach(box => {
+            if (box !== clickedBox) {
+                box.classList.remove('open');
+            }
+        });
+        clickedBox.classList.toggle('open');
+    }
+</script>
+
+</body>
+</html>
